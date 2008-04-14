@@ -1,0 +1,8 @@
+By default, the Rakefile will check that the .gitmodules file has entries for the relevant
+repos, then run "git-init" and "git-submodule update".
+
+If this hobomaster checkout is going to be used to push updates to github (or anywhere else)
+then the urls in .git/config will need to be updated (to use ssh etc). The urls should _not_
+be updated in .gitmodules since this is shared with everyone who pulls this repo.
+
+
