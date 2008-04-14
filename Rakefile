@@ -1,6 +1,7 @@
 require 'git'
 
-modules=["hobo", "hobofields", "hobosupport", "hobospec"]
+modules=["hobo", "hobofields", "hobosupport", "hobospec", "hobocentral", "agility"]
+modules.push("rdoctest")
 
 task :default => [:check_modules_file]
 
