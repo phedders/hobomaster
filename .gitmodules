@@ -1,0 +1,9 @@
+[submodule "hobo"]
+	path = hobo
+	url = git://github.com/tablatom/hobo.git
+[submodule "hobofields"]
+	path = hobofields
+	url = git://github.com/tablatom/hobofields.git
+[submodule "hobosupport"]
+	path = hobosupport
+	url = git://github.com/tablatom/hobosupport.git
