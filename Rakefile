@@ -1,6 +1,6 @@
 require 'git'
 
-modules=["hobo", "hobofields", "hobosupport"]
+modules=["hobo", "hobofields", "hobosupport", "hobospec"]
 
 task :default => [:check_modules_file]
 

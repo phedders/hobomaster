@@ -7,3 +7,6 @@
 [submodule "hobosupport"]
 	path = hobosupport
 	url = git://github.com/tablatom/hobosupport.git
+[submodule "hobospec"]
+	path = hobospec
+	url = git://github.com/tablatom/hobospec.git
