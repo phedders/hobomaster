@@ -1,8 +1,18 @@
-By default, the Rakefile will check that the .gitmodules file has entries for the relevant
-repos, then run "git-init" and "git-submodule update".
+Population of .gitmodules
+-------------------------
+	By default, the Rakefile will check that the .gitmodules file has entries for the relevant
+	repos, then run "git-init" and "git-submodule update".
 
-If this hobomaster checkout is going to be used to push updates to github (or anywhere else)
-then the urls in .git/config will need to be updated (to use ssh etc). The urls should _not_
-be updated in .gitmodules since this is shared with everyone who pulls this repo.
+Use of this repo for pushing submodules upstream
+------------------------------------------------
+	If this hobomaster checkout is going to be used to push updates to github (or anywhere else)
+	then the urls in .git/config will need to be updated (to use ssh etc). The urls should _not_
+	be updated in .gitmodules since this is shared with everyone who pulls this repo.
 
-
+How does this work?
+-------------------
+	The git-submodule system works by not only setting up 'remote' stanzas in .git/config of the
+	master, it also stores in commits a record of the specific commit that is checked out in each
+	submodule... so to get exactly the same environment all one has to do is commit in the source,
+	clone and then "git-submodule init; git-submodule update". FAB. And so you can even track
+	"release" versions by just tagging the master archive with its record of commits. Nice.
